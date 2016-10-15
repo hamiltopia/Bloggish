@@ -1,0 +1,36 @@
+<!--[[
+articletitle : The title of the Article
+articlepubdate : The Date the Article was Created
+articleimagehero : Large Hero Image from the Article
+imagecaption : A Caption related to the Image
+articlebody : The content of the Article Body
+articletags : The Taxonomy terms of the Article
+]]-->
+
+<!-- Article -->
+<article class="article" title="{articletitle} by {userfirstname} {userlastname}">
+
+  <header>
+    <h1 class="article-title" title="{articletitle} by {userfirstname} {userlastname}">{articletitle}</h1>
+    <h5 class="article-pubdate"><time pubdate="pubdate">{articlepubdate}</time></h5>
+
+    <!-- Profile -->{template_profile_teaser}<!-- /Profile -->
+
+  </header><!-- Header -->
+
+  <figure class="article-figure">
+    <img src="{articleimagehero}" class="article-image" alt="{articletitle} by {userfirstname} {userlastname}">
+    <figcaption>{imagecaption}</figcaption>
+  </figure>
+
+  <!-- Article Body -->{articlebody}<!-- /Article Body -->
+
+  <!-- Footer -->
+  <footer>
+
+    <!-- Article Tags -->{articletags}<!-- /Article Tags -->
+
+    <p><small>Creative Commons Attribution-ShareAlike License</small></p>
+  </footer><!-- Footer -->
+
+</article><!-- Article -->
