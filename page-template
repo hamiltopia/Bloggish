@@ -1,0 +1,210 @@
+<!--[[
+
+{logosource} : resource/img/logo/logo.png
+{htmltagclass} : js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths
+]]-->
+
+<!DOCTYPE html>
+<html class="{htmltagclass}" style="{htmlstyle}">
+    <head>
+        <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+        <title>{headertitle}</title>
+        <!-- CSS INCLUDES -->
+        {cssinclude}
+        <!-- JS INCLUDES -->
+        {jsinclude}
+
+        <!-- You can delete this stuff -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+
+        <!-- You can delete this stuff -->
+        <style>
+
+          #page-content {
+            background-color:#2196F3;
+          }
+
+          #left-column,
+          #right-column {
+            background-color:#E1F5FE;
+          }
+
+          #main-column {
+            background-color:#81D4FA;
+          }
+
+          #page-footer {
+            background-color:#EF9A9A;
+          }
+
+        </style>
+        <!-- /You can delete this stuff -->
+
+        <link href="css/stylesheets/theme.css" rel="stylesheet">
+
+    </head>
+    <body>
+
+        <!-- Page Layout -->
+        <div class="page container-fluid">
+
+          <!-- Nav -->
+          <nav class="navbar navbar-default">
+            <div class="container">
+
+              <!-- Brand and toggle get grouped for better mobile display -->
+              <div class="navbar-header">
+
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                  <span class="sr-only">Toggle navigation</span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                </button>
+
+                <!-- Logo -->
+                <a class="navbar-brand" href="#">
+                  <!-- Logo size will need to be adjusted for each instance -->
+                  <img src="{logosource}" title="{logotooltip}" class="logo" />
+                  <h1 class="site-name sr-only">{headertitle}</h1>
+                </a>
+
+              </div><!-- /navbar-header -->
+
+              <!-- Collect the nav links, forms, and other content for toggling -->
+              <div class="collapse navbar-collapse" id="navbar-collapse-header">
+                <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>
+                  <li><a href="#">Link</a></li>
+                  <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+                    <ul class="dropdown-menu">
+                      <li><a href="#">Action</a></li>
+                      <li><a href="#">Another action</a></li>
+                      <li><a href="#">Something else here</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">Separated link</a></li>
+                      <li role="separator" class="divider"></li>
+                      <li><a href="#">One more separated link</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div><!-- /.navbar-collapse -->
+
+            </div><!-- /.container-fluid -->
+          </nav><!-- /Nav -->
+
+            <!-- Header -->
+            <header id="header" class="jumbotron container-fluid">
+              <div class="container">
+                  <h1 class="header">{pagetitle}</h1>
+                  <h3 class="sub-header">{pageintro}</h3>
+              </div><!-- /container -->
+            </header>
+            <!-- /Header -->
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 1 Column -->
+            <!-- -------------------- -->
+
+            <!-- Content -->
+            <div id="page-content" class="container-fluid">
+              <div id="main-content" class="container">
+                <div class="row"
+
+                  <!-- CONTENT PANEL -->
+                  <div id="main-column" class="col-md-10 col-md-push-1 ad-column">
+                    {displaycontent}<br>
+                    <img src="http://placehold.it/300x75" class="ad" srcset="http://placehold.it/600x125 1000w, http://placehold.it/970x190 2000w" alt="yah">
+
+                  </div> <!-- / main column -->
+                  <!-- /CONTENT PANEL -->
+
+                </div><!-- /row-->
+              </div><!-- /main-content  -->
+            </div><!-- /page-content  -->
+            <!-- /Content -->
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 1 Column is Over -->
+            <!-- -------------------- -->
+
+
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 2 Column -->
+            <!-- -------------------- -->
+
+            <!-- Content -->
+            <div id="page-content" class="container-fluid">
+              <div id="main-content" class="container">
+                <div class="row"
+                  <!-- LEFT COLUMN -->
+                  <div id="left-column" class="col-md-4">{leftcolumn}</div><!-- /left column -->
+                  <!-- /LEFT COLUMN -->
+
+                  <!-- CONTENT PANEL -->
+                  <div id="main-column" class="col-md-8">{displaycontent}</div> <!-- / main column -->
+                  <!-- /CONTENT PANEL -->
+
+                  <!-- RIGHT COLUMN -->
+                  <!-- Can be Left Or Right, not both -->
+                  <!-- <div id="right-column" class="col-md-4">{rightcolumn}</div> --><!-- /right column -->
+                  <!-- /RIGHT COLUMN -->
+                </div><!-- /row-->
+              </div><!-- /main-content  -->
+            </div><!-- /page-content  -->
+            <!-- /Content -->
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 2 Column is Over -->
+            <!-- -------------------- -->
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 2 Column - Right Column -->
+            <!-- -------------------- -->
+
+            <!-- Content -->
+            <div id="page-content" class="container-fluid">
+              <div id="main-content" class="container">
+                <div class="row"
+
+                  <!-- CONTENT PANEL -->
+                  <div id="main-column" class="col-md-8">{displaycontent}</div> <!-- / main column -->
+                  <!-- /CONTENT PANEL -->
+
+                  <!-- RIGHT COLUMN -->
+                  <!-- Can be Left Or Right, not both -->
+                  <div id="right-column" class="col-md-4 ad-column">
+                    {rightcolumn}
+                    <img src="http://placehold.it/300x250" class="ad">
+                  </div><!-- /right column -->
+                  <!-- /RIGHT COLUMN -->
+                </div><!-- /row-->
+              </div><!-- /main-content  -->
+            </div><!-- /page-content  -->
+            <!-- /Content -->
+
+            <!-- -------------------- -->
+            <!-- Main Content Container - 2 Column is Over - Right Column -->
+            <!-- -------------------- -->
+
+            <!-- Page Footer -->
+            <div id="page-footer" class="container-fluid">
+              <div id="footer-content" class="container">
+                {pagefooter}
+              </div><!-- /footer content -->
+            </div><!-- /container-fluid -->
+            <!-- /Page Footer -->
+
+
+
+        </div><!-- /container -->
+        <!-- END: Page Layout -->
+
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    </body>
+</html>
