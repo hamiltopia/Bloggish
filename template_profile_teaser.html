@@ -1,12 +1,28 @@
 <!--[[
-linkprofile : HREF value to the user's profile
 userfirstname : User's first name
 userlastname : User's last name
+userimage : User's profile image
+userurl : Link to User's profile page
+
+There is other meta info included here.  I didn't name it yet as I didn't it important to do so at this time - 2/7/17 MH
 ]]-->
 
-<h4 class="profile-teaser" title="{userfirstname} {userlastname}">
-  <a href="{linkprofile}" title="{userfirstname} {userlastname}">
-    <img src="{userimage}" class="profile-avatar" alt="{userfirstname} {userlastname}">
-    <strong>{userfirstname} {userlastname} <em>Followers 200 | Following 123 | Something Else</em></strong>
-  </a>
-</h4>
+<!-- Profile Teaser -->
+<div class="card profile-teaser" title="{userfirstname} {userlastname}" style="max-width: 20rem;">
+  
+	<img src="{userimage}" class="card-img-top profile-avatar" alt="{userfirstname} {userlastname}" title="{userfirstname} {userlastname}">
+  
+  <div class="card-block">
+		<h3 class="card-title"><a href="{userurl}" title="{userfirstname} {userlastname}">Sterling Archer</a></h3>
+		<h6 class="card-subtitle text-muted">Member Since: 2013</h6>
+		<br>
+    <p class="card-text">
+			Articles: 18<br>
+			Followers: 14<br>
+			Following: 29<br>
+		</p>
+    <a href="#" class="card-link">Follow</a>
+    <a href="#" class="card-link">Message</a>
+
+  </div><!-- card block -->
+</div><!-- Card/Profile Teaser -->
